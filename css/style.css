@@ -1,0 +1,223 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: hsl(217, 54%, 11%);
+    font-family: 'Outfit', sans-serif;
+    
+}
+
+@media only screen and (min-width: 375px)  {
+    
+    .conteiner{
+        background-color: hsl(216, 50%, 16%);
+        width: 300px;
+        height: 500px;
+        margin: 10px auto;
+        border-radius: 10px;
+        display: grid;
+        grid-template-rows: 45% 25% 15% auto  ;
+        grid-template-areas: 
+        "img"
+        "description"
+        "crypto"
+        "avatar";
+    }
+    .picture{
+        grid-area: img;
+        width: 250px;
+        margin: 20px auto;
+        border-radius: 10px;
+    }
+    
+    .description{
+        grid-area: description;
+        color: white;
+        margin-top: 70px;
+        margin-left:25px ;
+        
+      
+    }
+    .description h1{
+        font-size: 20px;
+        font-weight: 500;
+    }
+    .description p{
+        margin-top: 10px;
+        opacity: 0.5;
+        font-weight: 100;
+        font-size: 15px;
+    }
+    .crypto{
+        grid-area: crypto;
+        margin: 0 25px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        *background-color: aqua;
+        border-bottom:solid 1px rgb(116, 116, 116);
+        
+    }
+    .eth{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .eth h2{
+        font-size: 13px;
+        margin-left: 5px;
+        color: hsl(178, 100%, 50%);
+        font-weight: 500;
+    }
+    .hour{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }  
+    .hour h3{
+        font-size: 15px;
+        margin-left: 5px;
+        color: hsl(215, 51%, 70%);
+        font-weight: 100;
+    }
+    .avatar{
+        grid-area: avatar;
+        margin:0 20px;
+        display: flex;
+        align-items: center;
+    }
+    .avatar img{
+        width: 30px;
+        height: 30px;
+        margin-left: 5px;
+        border-radius: 50%;
+        border: solid hsl(0, 0%, 100%) 1px;
+    }
+    .avatar p{
+        color: hsl(215, 51%, 70%);
+        font-size: 15px;
+        font-weight: 200;
+        margin-left: 10px;
+    }
+    .avatar p span{
+        color: hsl(0, 0%, 100%);
+    }
+    
+   
+}
+/*FALTA DESKTOP*/
+
+@media (min-width: 1024px){
+.conteiner {
+        background-color: hsl(216, 50%, 16%);
+        width: 300px;
+        height: 500px;
+        margin: 10px auto;
+        border-radius: 10px;
+        display: grid;
+        grid-template-rows: 45% 25% 15% auto;
+        grid-template-areas:
+            "img"
+            "description"
+            "crypto"
+            "avatar";
+    }
+
+    .picture {
+        grid-area: img;
+        width: 250px;
+        margin: 20px auto;
+        border-radius: 10px;
+    }
+
+    .description {
+        grid-area: description;
+        color: white;
+        margin-top: 70px;
+        margin-left: 25px;
+
+
+    }
+
+    .description h1 {
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    .description p {
+        margin-top: 10px;
+        opacity: 0.5;
+        font-weight: 100;
+        font-size: 15px;
+    }
+
+    .crypto {
+        grid-area: crypto;
+        margin: 0 25px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        *background-color: aqua;
+        border-bottom: solid 1px rgb(116, 116, 116);
+
+    }
+
+    .eth {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .eth h2 {
+        font-size: 13px;
+        margin-left: 5px;
+        color: hsl(178, 100%, 50%);
+        font-weight: 500;
+    }
+
+    .hour {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .hour h3 {
+        font-size: 15px;
+        margin-left: 5px;
+        color: hsl(215, 51%, 70%);
+        font-weight: 100;
+    }
+
+    .avatar {
+        grid-area: avatar;
+        margin: 0 20px;
+        display: flex;
+        align-items: center;
+    }
+
+    .avatar img {
+        width: 30px;
+        height: 30px;
+        margin-left: 5px;
+        border-radius: 50%;
+        border: solid hsl(0, 0%, 100%) 1px;
+    }
+
+    .avatar p {
+        color: hsl(215, 51%, 70%);
+        font-size: 15px;
+        font-weight: 200;
+        margin-left: 10px;
+    }
+
+    .avatar p span {
+        color: hsl(0, 0%, 100%);
+    }
+
+
+}
+   
